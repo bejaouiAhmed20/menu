@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 $primary-color: #C62828;
 $text-color: #1A1A1A;
 $text-secondary: #6B7280;
@@ -26,7 +30,7 @@ $surface-color: #F8F9FA;
     background-image: url('/images/home_page_pic.jpg');
     background-size: cover;
     background-position: center;
-    filter: blur(10px);
+    filter: blur(2px);
     z-index: -1;
   }
   
