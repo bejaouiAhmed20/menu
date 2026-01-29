@@ -1,0 +1,46 @@
+$primary-color: #C62828;
+$text-color: #1A1A1A;
+$text-secondary: #6B7280;
+$surface-color: #F8F9FA;
+
+.category-tabs {
+  margin-bottom: 32px;
+  
+  &__container {
+    border-bottom: 1px solid #E5E7EB;
+  }
+  
+  &__list {
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  
+  &__tab {
+    padding: 12px 24px;
+    background: none;
+    border: none;
+    color: $text-secondary;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      color: $primary-color;
+    }
+    
+    &--active {
+      color: $primary-color;
+      border-bottom-color: $primary-color;
+    }
+  }
+}

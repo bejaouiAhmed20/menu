@@ -1,0 +1,99 @@
+$primary-color: #C62828;
+$text-color: #1A1A1A;
+$text-secondary: #6B7280;
+$surface-color: #F8F9FA;
+
+.about-section {
+  padding: 80px 0;
+  background-color: $surface-color;
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+    align-items: center;
+    margin-bottom: 64px;
+    
+    @media (min-width: 1024px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: $text-secondary;
+      margin: 0;
+    }
+  }
+  
+  &__image {
+    position: relative;
+    aspect-ratio: 1;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #333;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  &__stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+    text-align: center;
+  }
+  
+  &__stat {
+    h3 {
+      font-size: 48px;
+      font-weight: bold;
+      color: $primary-color;
+      margin: 0 0 8px 0;
+    }
+    
+    p {
+      color: $text-secondary;
+      margin: 0;
+    }
+  }
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 48px;
+  
+  h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: $text-color;
+    font-family: 'Playfair Display', serif;
+    margin: 0 0 16px 0;
+    
+    @media (min-width: 768px) {
+      font-size: 64px;
+    }
+  }
+  
+  p {
+    font-size: 18px;
+    color: $text-secondary;
+    max-width: 512px;
+    margin: 0 auto;
+  }
+}

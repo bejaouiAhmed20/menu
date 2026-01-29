@@ -1,0 +1,79 @@
+$primary-color: #C62828;
+$text-color: #1A1A1A;
+$text-secondary: #6B7280;
+$background-color: #FFFFFF;
+$surface-color: #F8F9FA;
+
+.home-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $background-color;
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  
+  &__hero {
+    text-align: center;
+    
+    h1 {
+      font-size: 48px;
+      font-weight: bold;
+      color: $text-color;
+      font-family: 'Playfair Display', serif;
+      margin: 0 0 24px 0;
+      
+      @media (min-width: 768px) {
+        font-size: 64px;
+      }
+      
+      .highlight {
+        color: $primary-color;
+      }
+    }
+    
+    p {
+      font-size: 18px;
+      color: $text-secondary;
+      max-width: 768px;
+      margin: 0 auto 32px auto;
+      line-height: 1.6;
+      
+      @media (min-width: 768px) {
+        font-size: 24px;
+      }
+    }
+    
+    .cta-button {
+      padding: 16px 32px;
+      background-color: $primary-color;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        background-color: darken($primary-color, 10%);
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
+
+.featured-section {
+  padding: 80px 0;
+  background-color: $surface-color;
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+}

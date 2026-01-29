@@ -1,0 +1,20 @@
+$primary-color: #C62828;
+$text-color: #1A1A1A;
+$text-secondary: #6B7280;
+$background-color: #FFFFFF;
+
+.menu-section {
+  padding: 80px 0;
+  min-height: 100vh;
+  background-color: $background-color;
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  
+  &__controls {
+    margin: 0 0 32px 0;
+  }
+}

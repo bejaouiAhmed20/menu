@@ -1,0 +1,112 @@
+interface MenuItem {
+  id: number;
+  name: string;
+  description: string;
+  price: number;
+  image: string;
+  category: string;
+  featured?: boolean;
+}
+
+type MenuCategory = 'Pizza' | 'Burgers' | 'Pasta' | 'Drinks' | 'Desserts';
+
+const menuData: MenuItem[] = [
+  {
+    "id": 1,
+    "name": "Margherita Pizza",
+    "description": "Classic pizza with tomato sauce, fresh mozzarella, and basil",
+    "price": 12,
+    "image": "/src/assets/images/pizza.jpg",
+    "category": "Pizza",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "name": "Pepperoni Pizza",
+    "description": "Traditional pizza with pepperoni and mozzarella cheese",
+    "price": 14,
+    "image": "/src/assets/images/pizza.webp",
+    "category": "Pizza"
+  },
+  {
+    "id": 3,
+    "name": "Classic Burger",
+    "description": "Beef patty with lettuce, tomato, onion, and special sauce",
+    "price": 10,
+    "image": "/src/assets/images/burger.jpg",
+    "category": "Burgers",
+    "featured": true
+  },
+  {
+    "id": 4,
+    "name": "Chicken Burger",
+    "description": "Grilled chicken breast with avocado and chipotle mayo",
+    "price": 11,
+    "image": "/src/assets/images/burger.jpg",
+    "category": "Burgers"
+  },
+  {
+    "id": 5,
+    "name": "Spaghetti Carbonara",
+    "description": "Creamy pasta with pancetta, eggs, and parmesan cheese",
+    "price": 13,
+    "image": "/src/assets/images/pasta.jpg",
+    "category": "Pasta",
+    "featured": true
+  },
+  {
+    "id": 6,
+    "name": "Penne Arrabbiata",
+    "description": "Spicy tomato sauce with garlic, chili, and fresh herbs",
+    "price": 11,
+    "image": "/src/assets/images/pasta.jpg",
+    "category": "Pasta"
+  },
+  {
+    "id": 7,
+    "name": "Coca Cola",
+    "description": "Classic refreshing cola drink",
+    "price": 3,
+    "image": "/src/assets/images/cocaCola.jpeg",
+    "category": "Drinks"
+  },
+  {
+    "id": 8,
+    "name": "Fresh Orange Juice",
+    "description": "Freshly squeezed orange juice",
+    "price": 4,
+    "image": "/src/assets/images/orange_juice.jpg",
+    "category": "Drinks"
+  },
+  {
+    "id": 9,
+    "name": "Chocolate Cake",
+    "description": "Rich chocolate cake with chocolate ganache",
+    "price": 6,
+    "image": "/src/assets/images/chocolate_cake.jpg",
+    "category": "Desserts"
+  },
+  {
+    "id": 10,
+    "name": "Tiramisu",
+    "description": "Classic Italian dessert with coffee and mascarpone",
+    "price": 7,
+    "image": "/src/assets/images/tiramisu.jpg",
+    "category": "Desserts"
+  }
+];
+
+export const menuService = {
+  getAllItems: (): MenuItem[] => menuData,
+  getItemsByCategory: (category: MenuCategory): MenuItem[] => 
+    menuData.filter(item => item.category === category),
+  getFeaturedItems: (): MenuItem[] => 
+    menuData.filter(item => item.featured),
+  getCategories: (): MenuCategory[] => 
+    [...new Set(menuData.map(item => item.category))] as MenuCategory[],
+  searchItems: (query: string): MenuItem[] => 
+    menuData.filter(item => 
+      item.name.toLowerCase().includes(query.toLowerCase()) ||
+      item.description.toLowerCase().includes(query.toLowerCase())
+    )
+};
