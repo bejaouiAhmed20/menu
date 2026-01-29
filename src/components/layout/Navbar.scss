@@ -26,6 +26,12 @@ $border-color: #E5E7EB;
     height: 64px;
   }
   
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
   &__logo {
     font-size: 24px;
     font-weight: bold;

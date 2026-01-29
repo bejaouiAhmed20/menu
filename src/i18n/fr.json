@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "menu": "Menu",
+    "about": "À propos",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Bienvenue chez",
+    "restaurant": "Bella Vista",
+    "subtitle": "Découvrez une cuisine italienne authentique préparée avec passion et les meilleurs ingrédients",
+    "cta": "Voir Notre Menu",
+    "featured": "Plats Vedettes",
+    "featuredSubtitle": "Découvrez les recommandations spéciales de notre chef"
+  },
+  "menu": {
+    "title": "Notre Menu",
+    "subtitle": "Explorez notre délicieuse sélection de plats italiens authentiques",
+    "search": "Rechercher des plats...",
+    "categories": {
+      "all": "Tout",
+      "pizza": "Pizza",
+      "burgers": "Burgers",
+      "pasta": "Pâtes",
+      "drinks": "Boissons",
+      "desserts": "Desserts"
+    },
+    "items": {
+      "margherita": {
+        "name": "Pizza Margherita",
+        "description": "Pizza classique avec sauce tomate, mozzarella fraîche et basilic"
+      },
+      "pepperoni": {
+        "name": "Pizza Pepperoni",
+        "description": "Pizza traditionnelle avec pepperoni et fromage mozzarella"
+      },
+      "classicBurger": {
+        "name": "Burger Classique",
+        "description": "Galette de bœuf avec laitue, tomate, oignon et sauce spéciale"
+      },
+      "chickenBurger": {
+        "name": "Burger au Poulet",
+        "description": "Poitrine de poulet grillée avec avocat et mayo chipotle"
+      },
+      "carbonara": {
+        "name": "Spaghetti Carbonara",
+        "description": "Pâtes crémeuses avec pancetta, œufs et fromage parmesan"
+      },
+      "arrabbiata": {
+        "name": "Penne Arrabbiata",
+        "description": "Sauce tomate épicée avec ail, piment et herbes fraîches"
+      },
+      "cola": {
+        "name": "Coca Cola",
+        "description": "Boisson cola rafraîchissante classique"
+      },
+      "orangeJuice": {
+        "name": "Jus d'Orange Frais",
+        "description": "Jus d'orange fraîchement pressé"
+      },
+      "chocolateCake": {
+        "name": "Gâteau au Chocolat",
+        "description": "Riche gâteau au chocolat avec ganache au chocolat"
+      },
+      "tiramisu": {
+        "name": "Tiramisu",
+        "description": "Dessert italien classique au café et mascarpone"
+      }
+    },
+    "featured": "Vedette",
+    "noItems": "Aucun élément trouvé"
+  },
+  "about": {
+    "title": "Notre Histoire",
+    "subtitle": "Découvrez la passion derrière Bella Vista",
+    "text1": "Fondée en 1985 par la famille Rossi, Bella Vista sert une cuisine italienne authentique depuis plus de trois décennies. Notre engagement envers les recettes traditionnelles et les ingrédients frais de haute qualité en a fait une destination appréciée des amateurs de cuisine.",
+    "text2": "Chaque plat est préparé avec amour et attention aux détails, en utilisant des recettes transmises de génération en génération. De nos pizzas au feu de bois à nos pâtes faites maison, nous apportons le goût authentique de l'Italie à votre table.",
+    "text3": "Nous croyons que la bonne nourriture rassemble les gens, et nous sommes honorés de faire partie de vos moments spéciaux et de vos célébrations quotidiennes.",
+    "stats": {
+      "years": "Années d'Excellence",
+      "dishes": "Plats Signature",
+      "customers": "Clients Satisfaits"
+    }
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Contactez-nous pour des réservations ou des demandes",
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "namePlaceholder": "Votre nom",
+      "emailPlaceholder": "votre@email.com",
+      "messagePlaceholder": "Votre message...",
+      "submit": "Envoyer le Message",
+      "success": "Merci pour votre message ! Nous vous répondrons bientôt."
+    },
+    "info": {
+      "address": "Adresse",
+      "phone": "Téléphone",
+      "email": "Email"
+    },
+    "details": {
+      "street": "123 Rue du Restaurant",
+      "city": "Ville, État 12345",
+      "phone": "(555) 123-4567",
+      "email": "info@bellavista.com"
+    },
+    "map": "Espace réservé à l'intégration de carte"
+  },
+  "footer": {
+    "description": "Cuisine italienne authentique au cœur de la ville",
+    "contact": "Contact",
+    "followUs": "Suivez-nous",
+    "rights": "© 2024 Bella Vista. Tous droits réservés."
+  }
+}

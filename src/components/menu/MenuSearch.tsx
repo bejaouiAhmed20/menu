@@ -1,5 +1,6 @@
 import { Search as SearchIcon } from '@mui/icons-material';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import './MenuSearch.scss';
 
 interface MenuSearchProps {
@@ -11,6 +12,8 @@ interface MenuSearchProps {
  * Search input component for filtering menu items
  */
 export const MenuSearch = ({ searchQuery, onSearchChange }: MenuSearchProps) => {
+  const { t } = useTranslation();
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -21,7 +24,7 @@ export const MenuSearch = ({ searchQuery, onSearchChange }: MenuSearchProps) => 
         <SearchIcon className="menu-search__icon" />
         <input
           type="text"
-          placeholder="Search menu items..."
+          placeholder={t('menu.search')}
           value={searchQuery}
           onChange={(e) => onSearchChange(e.target.value)}
           className="menu-search__input"

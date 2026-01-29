@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { MenuCard } from './MenuCard';
 import './MenuGrid.scss';
 
@@ -19,10 +20,12 @@ interface MenuGridProps {
  * Grid layout for menu items with SCSS styling
  */
 export const MenuGrid = ({ items }: MenuGridProps) => {
+  const { t } = useTranslation();
+
   if (items.length === 0) {
     return (
       <div className="menu-grid__empty">
-        <p>No items found</p>
+        <p>{t('menu.noItems')}</p>
       </div>
     );
   }

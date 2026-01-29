@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import { LocationOn, Phone, Email } from '@mui/icons-material';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import './Contact.scss';
 
 /**
  * Contact page with contact form and restaurant information
  */
 export const Contact = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -20,25 +22,25 @@ export const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
-    alert('Thank you for your message! We\'ll get back to you soon.');
+    alert(t('contact.form.success'));
     setFormData({ name: '', email: '', message: '' });
   };
 
   const contactInfo = [
     {
       icon: <LocationOn />,
-      title: 'Address',
-      details: ['123 Restaurant Street', 'City, State 12345']
+      title: t('contact.info.address'),
+      details: [t('contact.details.street'), t('contact.details.city')]
     },
     {
       icon: <Phone />,
-      title: 'Phone',
-      details: ['(555) 123-4567']
+      title: t('contact.info.phone'),
+      details: [t('contact.details.phone')]
     },
     {
       icon: <Email />,
-      title: 'Email',
-      details: ['info@bellavista.com']
+      title: t('contact.info.email'),
+      details: [t('contact.details.email')]
     }
   ];
 
@@ -51,7 +53,7 @@ export const Contact = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            Contact Us
+            {t('contact.title')}
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -59,7 +61,7 @@ export const Contact = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
           >
-            Get in touch with us for reservations or inquiries
+            {t('contact.subtitle')}
           </motion.p>
         </div>
 
@@ -74,39 +76,39 @@ export const Contact = () => {
           >
             <form onSubmit={handleSubmit}>
               <div className="form-group">
-                <label htmlFor="name">Name</label>
+                <label htmlFor="name">{t('contact.form.name')}</label>
                 <input
                   id="name"
                   type="text"
                   value={formData.name}
                   onChange={(e) => handleInputChange('name', e.target.value)}
                   required
-                  placeholder="Your name"
+                  placeholder={t('contact.form.namePlaceholder')}
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email">{t('contact.form.email')}</label>
                 <input
                   id="email"
                   type="email"
                   value={formData.email}
                   onChange={(e) => handleInputChange('email', e.target.value)}
                   required
-                  placeholder="your@email.com"
+                  placeholder={t('contact.form.emailPlaceholder')}
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="message">Message</label>
+                <label htmlFor="message">{t('contact.form.message')}</label>
                 <textarea
                   id="message"
                   value={formData.message}
                   onChange={(e) => handleInputChange('message', e.target.value)}
                   required
-                  placeholder="Your message..."
+                  placeholder={t('contact.form.messagePlaceholder')}
                 />
               </div>
               <button type="submit" className="submit-btn">
-                Send Message
+                {t('contact.form.submit')}
               </button>
             </form>
           </motion.div>
@@ -135,7 +137,7 @@ export const Contact = () => {
 
             {/* Map Placeholder */}
             <div className="contact-section__map">
-              <p>Map Integration Placeholder</p>
+              <p>{t('contact.map')}</p>
             </div>
           </motion.div>
         </div>

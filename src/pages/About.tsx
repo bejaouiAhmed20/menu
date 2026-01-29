@@ -1,10 +1,13 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import './About.scss';
 
 /**
  * About page with restaurant story and information
  */
 export const About = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="about" className="about-section">
       <div className="container">
@@ -14,7 +17,7 @@ export const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            Our Story
+            {t('about.title')}
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -22,7 +25,7 @@ export const About = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
           >
-            Discover the passion behind Bella Vista
+            {t('about.subtitle')}
           </motion.p>
         </div>
 
@@ -34,21 +37,9 @@ export const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <p>
-              Founded in 1985 by the Rossi family, Bella Vista has been serving authentic 
-              Italian cuisine for over three decades. Our commitment to traditional recipes 
-              and fresh, high-quality ingredients has made us a beloved destination for 
-              food lovers.
-            </p>
-            <p>
-              Every dish is prepared with love and attention to detail, using recipes 
-              passed down through generations. From our wood-fired pizzas to our 
-              handmade pasta, we bring the authentic taste of Italy to your table.
-            </p>
-            <p>
-              We believe that great food brings people together, and we're honored to 
-              be part of your special moments and everyday celebrations.
-            </p>
+            <p>{t('about.text1')}</p>
+            <p>{t('about.text2')}</p>
+            <p>{t('about.text3')}</p>
           </motion.div>
 
           <motion.div
@@ -59,7 +50,7 @@ export const About = () => {
             transition={{ duration: 0.8 }}
           >
             <img
-              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzMzIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyMCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPlJlc3RhdXJhbnQgSW50ZXJpb3I8L3RleHQ+PC9zdmc+"
+              src="/src/assets/images/restaurant_interior.jpg"
               alt="Restaurant Interior"
             />
           </motion.div>
@@ -74,15 +65,15 @@ export const About = () => {
         >
           <div className="about-section__stat">
             <h3>35+</h3>
-            <p>Years of Excellence</p>
+            <p>{t('about.stats.years')}</p>
           </div>
           <div className="about-section__stat">
             <h3>50+</h3>
-            <p>Signature Dishes</p>
+            <p>{t('about.stats.dishes')}</p>
           </div>
           <div className="about-section__stat">
             <h3>1000+</h3>
-            <p>Happy Customers</p>
+            <p>{t('about.stats.customers')}</p>
           </div>
         </motion.div>
       </div>

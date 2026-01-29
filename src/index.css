@@ -45,3 +45,36 @@
     margin: 0 auto;
   }
 }
+
+/* RTL Support */
+[dir="rtl"] {
+  .navbar__content {
+    flex-direction: row-reverse;
+  }
+  
+  .navbar__nav {
+    flex-direction: row-reverse;
+  }
+  
+  .navbar__drawer {
+    right: auto;
+    left: -250px;
+    
+    &.open {
+      left: 0;
+    }
+  }
+  
+  .language-switcher__dropdown {
+    right: auto;
+    left: 0;
+  }
+  
+  .menu-card__content {
+    flex-direction: row-reverse;
+  }
+  
+  .menu-card__header {
+    flex-direction: row-reverse;
+  }
+}

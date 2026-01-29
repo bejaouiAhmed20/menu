@@ -1,20 +1,23 @@
 import { useState } from 'react';
 import { Menu as MenuIcon, Close as CloseIcon } from '@mui/icons-material';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+import { LanguageSwitcher } from '../common/LanguageSwitcher';
 import './Navbar.scss';
 
-const navItems = [
-  { label: 'Home', href: '#home' },
-  { label: 'Menu', href: '#menu' },
-  { label: 'About', href: '#about' },
-  { label: 'Contact', href: '#contact' }
-];
-
 /**
- * Responsive navigation bar with mobile drawer
+ * Responsive navigation bar with mobile drawer and language switcher
  */
 export const Navbar = () => {
+  const { t } = useTranslation();
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  const navItems = [
+    { label: t('nav.home'), href: '#home' },
+    { label: t('nav.menu'), href: '#menu' },
+    { label: t('nav.about'), href: '#about' },
+    { label: t('nav.contact'), href: '#contact' }
+  ];
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -51,13 +54,17 @@ export const Navbar = () => {
               ))}
             </div>
 
-            {/* Mobile Menu Button */}
-            <button
-              className="navbar__menu-btn"
-              onClick={handleDrawerToggle}
-            >
-              <MenuIcon />
-            </button>
+            <div className="navbar__actions">
+              <LanguageSwitcher />
+              
+              {/* Mobile Menu Button */}
+              <button
+                className="navbar__menu-btn"
+                onClick={handleDrawerToggle}
+              >
+                <MenuIcon />
+              </button>
+            </div>
           </div>
         </div>
       </nav>

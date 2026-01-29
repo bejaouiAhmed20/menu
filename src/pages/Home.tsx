@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { menuService } from '../services/menuService';
+import { useTranslation } from 'react-i18next';
+import { useMenuService } from '../services/multilingualMenuService';
 import { MenuGrid } from '../components/menu/MenuGrid';
 import './Home.scss';
 
@@ -7,6 +8,8 @@ import './Home.scss';
  * Home page with hero section and featured menu items
  */
 export const Home = () => {
+  const { t } = useTranslation();
+  const menuService = useMenuService();
   const featuredItems = menuService.getFeaturedItems();
 
   const scrollToMenu = () => {
@@ -25,16 +28,16 @@ export const Home = () => {
             className="home-section__hero"
           >
             <h1>
-              Welcome to{' '}
+              {t('home.title')}{' '}
               <span className="highlight">
-                Bella Vista
+                {t('home.restaurant')}
               </span>
             </h1>
             <p>
-              Experience authentic Italian cuisine crafted with passion and the finest ingredients
+              {t('home.subtitle')}
             </p>
             <button className="cta-button" onClick={scrollToMenu}>
-              View Our Menu
+              {t('home.cta')}
             </button>
           </motion.div>
         </div>
@@ -49,7 +52,7 @@ export const Home = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              Featured Dishes
+              {t('home.featured')}
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -57,7 +60,7 @@ export const Home = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
             >
-              Discover our chef's special recommendations
+              {t('home.featuredSubtitle')}
             </motion.p>
           </div>
           <MenuGrid items={featuredItems} />

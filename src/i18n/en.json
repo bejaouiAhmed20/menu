@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Welcome to",
+    "restaurant": "Bella Vista",
+    "subtitle": "Experience authentic Italian cuisine crafted with passion and the finest ingredients",
+    "cta": "View Our Menu",
+    "featured": "Featured Dishes",
+    "featuredSubtitle": "Discover our chef's special recommendations"
+  },
+  "menu": {
+    "title": "Our Menu",
+    "subtitle": "Explore our delicious selection of authentic Italian dishes",
+    "search": "Search menu items...",
+    "categories": {
+      "all": "All",
+      "pizza": "Pizza",
+      "burgers": "Burgers", 
+      "pasta": "Pasta",
+      "drinks": "Drinks",
+      "desserts": "Desserts"
+    },
+    "items": {
+      "margherita": {
+        "name": "Margherita Pizza",
+        "description": "Classic pizza with tomato sauce, fresh mozzarella, and basil"
+      },
+      "pepperoni": {
+        "name": "Pepperoni Pizza", 
+        "description": "Traditional pizza with pepperoni and mozzarella cheese"
+      },
+      "classicBurger": {
+        "name": "Classic Burger",
+        "description": "Beef patty with lettuce, tomato, onion, and special sauce"
+      },
+      "chickenBurger": {
+        "name": "Chicken Burger",
+        "description": "Grilled chicken breast with avocado and chipotle mayo"
+      },
+      "carbonara": {
+        "name": "Spaghetti Carbonara",
+        "description": "Creamy pasta with pancetta, eggs, and parmesan cheese"
+      },
+      "arrabbiata": {
+        "name": "Penne Arrabbiata",
+        "description": "Spicy tomato sauce with garlic, chili, and fresh herbs"
+      },
+      "cola": {
+        "name": "Coca Cola",
+        "description": "Classic refreshing cola drink"
+      },
+      "orangeJuice": {
+        "name": "Fresh Orange Juice",
+        "description": "Freshly squeezed orange juice"
+      },
+      "chocolateCake": {
+        "name": "Chocolate Cake",
+        "description": "Rich chocolate cake with chocolate ganache"
+      },
+      "tiramisu": {
+        "name": "Tiramisu",
+        "description": "Classic Italian dessert with coffee and mascarpone"
+      }
+    },
+    "featured": "Featured",
+    "noItems": "No items found"
+  },
+  "about": {
+    "title": "Our Story",
+    "subtitle": "Discover the passion behind Bella Vista",
+    "text1": "Founded in 1985 by the Rossi family, Bella Vista has been serving authentic Italian cuisine for over three decades. Our commitment to traditional recipes and fresh, high-quality ingredients has made us a beloved destination for food lovers.",
+    "text2": "Every dish is prepared with love and attention to detail, using recipes passed down through generations. From our wood-fired pizzas to our handmade pasta, we bring the authentic taste of Italy to your table.",
+    "text3": "We believe that great food brings people together, and we're honored to be part of your special moments and everyday celebrations.",
+    "stats": {
+      "years": "Years of Excellence",
+      "dishes": "Signature Dishes", 
+      "customers": "Happy Customers"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with us for reservations or inquiries",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "your@email.com",
+      "messagePlaceholder": "Your message...",
+      "submit": "Send Message",
+      "success": "Thank you for your message! We'll get back to you soon."
+    },
+    "info": {
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email"
+    },
+    "details": {
+      "street": "123 Restaurant Street",
+      "city": "City, State 12345",
+      "phone": "(555) 123-4567",
+      "email": "info@bellavista.com"
+    },
+    "map": "Map Integration Placeholder"
+  },
+  "footer": {
+    "description": "Authentic Italian cuisine in the heart of the city",
+    "contact": "Contact",
+    "followUs": "Follow Us",
+    "rights": "© 2024 Bella Vista. All rights reserved."
+  }
+}

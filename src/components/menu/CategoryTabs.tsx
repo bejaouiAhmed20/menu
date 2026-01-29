@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import './CategoryTabs.scss';
 
 type MenuCategory = 'Pizza' | 'Burgers' | 'Pasta' | 'Drinks' | 'Desserts';
@@ -13,7 +14,13 @@ interface CategoryTabsProps {
  * Category tabs for filtering menu items
  */
 export const CategoryTabs = ({ categories, activeCategory, onCategoryChange }: CategoryTabsProps) => {
+  const { t } = useTranslation();
   const allCategories = ['All', ...categories];
+
+  const getCategoryLabel = (category: string) => {
+    if (category === 'All') return t('menu.categories.all');
+    return t(`menu.categories.${category.toLowerCase()}`);
+  };
 
   return (
     <motion.div
@@ -31,7 +38,7 @@ export const CategoryTabs = ({ categories, activeCategory, onCategoryChange }: C
               }`}
               onClick={() => onCategoryChange(category)}
             >
-              {category}
+              {getCategoryLabel(category)}
             </button>
           ))}
         </div>

@@ -1,29 +1,32 @@
 import { Facebook, Instagram, Twitter } from '@mui/icons-material';
 import { IconButton } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 import './Footer.scss';
 
 /**
  * Footer component with restaurant info and social links
  */
 export const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="footer">
       <div className="container">
         <div className="footer__content">
           <div className="footer__section">
             <h3>Bella Vista</h3>
-            <p>Authentic Italian cuisine in the heart of the city</p>
+            <p>{t('footer.description')}</p>
           </div>
           
           <div className="footer__section">
-            <h4>Contact</h4>
-            <p>123 Restaurant Street</p>
-            <p>City, State 12345</p>
-            <p>(555) 123-4567</p>
+            <h4>{t('footer.contact')}</h4>
+            <p>{t('contact.details.street')}</p>
+            <p>{t('contact.details.city')}</p>
+            <p>{t('contact.details.phone')}</p>
           </div>
           
           <div className="footer__section">
-            <h4>Follow Us</h4>
+            <h4>{t('footer.followUs')}</h4>
             <div className="footer__social">
               <IconButton className="social-icon">
                 <Facebook />
@@ -39,7 +42,7 @@ export const Footer = () => {
         </div>
         
         <div className="footer__bottom">
-          <p>© 2024 Bella Vista. All rights reserved.</p>
+          <p>{t('footer.rights')}</p>
         </div>
       </div>
     </footer>
