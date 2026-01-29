@@ -1,7 +1,7 @@
 import { Button as MuiButton } from '@mui/material';
 import { motion } from 'framer-motion';
 import { theme } from '../../theme/theme';
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 
 interface ButtonProps {
   variant?: 'primary' | 'secondary' | 'outline';

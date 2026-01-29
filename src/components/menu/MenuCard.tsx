@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
 import './MenuCard.scss';
 
 interface MenuItem {
@@ -21,8 +20,6 @@ interface MenuCardProps {
  * Horizontal menu item card with SCSS styling
  */
 export const MenuCard = ({ item, index }: MenuCardProps) => {
-  const { t } = useTranslation();
-
   return (
     <motion.div
       initial={{ opacity: 0, x: -20 }}
