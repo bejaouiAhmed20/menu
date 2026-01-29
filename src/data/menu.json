@@ -4,7 +4,7 @@
     "name": "Margherita Pizza",
     "description": "Classic pizza with tomato sauce, fresh mozzarella, and basil",
     "price": 12,
-    "image": "/src/assets/images/pizza.jpg",
+    "image": "/images/pizza.jpg",
     "category": "Pizza",
     "featured": true
   },
@@ -13,7 +13,7 @@
     "name": "Pepperoni Pizza",
     "description": "Traditional pizza with pepperoni and mozzarella cheese",
     "price": 14,
-    "image": "/src/assets/images/pizza.webp",
+    "image": "/images/pizza.webp",
     "category": "Pizza"
   },
   {
@@ -21,7 +21,7 @@
     "name": "Classic Burger",
     "description": "Beef patty with lettuce, tomato, onion, and special sauce",
     "price": 10,
-    "image": "/src/assets/images/burger.jpg",
+    "image": "/images/burger.jpg",
     "category": "Burgers",
     "featured": true
   },
@@ -30,7 +30,7 @@
     "name": "Chicken Burger",
     "description": "Grilled chicken breast with avocado and chipotle mayo",
     "price": 11,
-    "image": "/src/assets/images/burger.jpg",
+    "image": "/images/burger.jpg",
     "category": "Burgers"
   },
   {
@@ -38,7 +38,7 @@
     "name": "Spaghetti Carbonara",
     "description": "Creamy pasta with pancetta, eggs, and parmesan cheese",
     "price": 13,
-    "image": "/src/assets/images/pasta.jpg",
+    "image": "/images/pasta.jpg",
     "category": "Pasta",
     "featured": true
   },
@@ -47,7 +47,7 @@
     "name": "Penne Arrabbiata",
     "description": "Spicy tomato sauce with garlic, chili, and fresh herbs",
     "price": 11,
-    "image": "/src/assets/images/pasta.jpg",
+    "image": "/images/pasta.jpg",
     "category": "Pasta"
   },
   {
@@ -55,7 +55,7 @@
     "name": "Coca Cola",
     "description": "Classic refreshing cola drink",
     "price": 3,
-    "image": "/src/assets/images/cocaCola.jpeg",
+    "image": "/images/cocaCola.jpeg",
     "category": "Drinks"
   },
   {
@@ -63,7 +63,7 @@
     "name": "Fresh Orange Juice",
     "description": "Freshly squeezed orange juice",
     "price": 4,
-    "image": "/src/assets/images/orange_juice.jpg",
+    "image": "/images/orange_juice.jpg",
     "category": "Drinks"
   },
   {
@@ -71,7 +71,7 @@
     "name": "Chocolate Cake",
     "description": "Rich chocolate cake with chocolate ganache",
     "price": 6,
-    "image": "/src/assets/images/chocolate_cake.jpg",
+    "image": "/images/chocolate_cake.jpg",
     "category": "Desserts"
   },
   {
@@ -79,7 +79,7 @@
     "name": "Tiramisu",
     "description": "Classic Italian dessert with coffee and mascarpone",
     "price": 7,
-    "image": "/src/assets/images/tiramisu.jpg",
+    "image": "/images/tiramisu.jpg",
     "category": "Desserts"
   }
 ]

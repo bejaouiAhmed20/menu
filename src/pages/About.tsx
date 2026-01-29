@@ -50,7 +50,7 @@ export const About = () => {
             transition={{ duration: 0.8 }}
           >
             <img
-              src="/src/assets/images/restaurant_interior.jpg"
+              src="/images/restaurant_interior.jpg"
               alt="Restaurant Interior"
             />
           </motion.div>

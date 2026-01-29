@@ -4,9 +4,9 @@ import { ExpandMore } from '@mui/icons-material';
 import './LanguageSwitcher.scss';
 
 const languages = [
-  { code: 'en', name: 'English', flag: '/src/assets/images/UK_flag.png' },
-  { code: 'fr', name: 'Français', flag: '/src/assets/images/france_flag.png' },
-  { code: 'ar', name: 'العربية', flag: '/src/assets/images/saudi-arabia-flag.png' }
+  { code: 'en', name: 'English', flag: '/images/UK_flag.png' },
+  { code: 'fr', name: 'Français', flag: '/images/france_flag.png' },
+  { code: 'ar', name: 'العربية', flag: '/images/saudi-arabia-flag.png' }
 ];
 
 export const LanguageSwitcher = () => {
