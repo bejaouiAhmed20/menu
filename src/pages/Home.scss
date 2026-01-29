@@ -9,12 +9,33 @@ $surface-color: #F8F9FA;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $background-color;
+  position: relative;
+  background-color: #000;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/images/home_page_pic.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/src/assets/images/home_page_pic.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    z-index: -1;
+  }
   
   .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
+    position: relative;
+    z-index: 1;
   }
   
   &__hero {
@@ -23,9 +44,10 @@ $surface-color: #F8F9FA;
     h1 {
       font-size: 48px;
       font-weight: bold;
-      color: $text-color;
+      color: #FFFFFF;
       font-family: 'Playfair Display', serif;
       margin: 0 0 24px 0;
+      // text-shadow: 0 4px 8px rgba(255, 255, 255, 0.8), 0 2px 4px rgba(0, 0, 0, 0.6);
       
       @media (min-width: 768px) {
         font-size: 64px;
@@ -33,15 +55,17 @@ $surface-color: #F8F9FA;
       
       .highlight {
         color: $primary-color;
+        // text-shadow: 0 4px 8px rgba(255, 0, 0, 0.8), 0 2px 4px rgba(198, 40, 40, 0.3);
       }
     }
     
     p {
       font-size: 18px;
-      color: $text-secondary;
+      color: #FFFFFF;
       max-width: 768px;
       margin: 0 auto 32px auto;
       line-height: 1.6;
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8), 0 1px 3px rgba(0, 0, 0, 0.6);
       
       @media (min-width: 768px) {
         font-size: 24px;
