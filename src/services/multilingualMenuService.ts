@@ -13,16 +13,16 @@ interface MenuItem {
 type MenuCategory = 'Pizza' | 'Burgers' | 'Pasta' | 'Drinks' | 'Desserts';
 
 const menuItems = [
-  { id: 1, key: 'margherita', price: 12, image: '/src/assets/images/pizza.jpg', category: 'Pizza', featured: true },
-  { id: 2, key: 'pepperoni', price: 14, image: '/src/assets/images/pizza.webp', category: 'Pizza' },
-  { id: 3, key: 'classicBurger', price: 10, image: '/src/assets/images/burger.jpg', category: 'Burgers', featured: true },
-  { id: 4, key: 'chickenBurger', price: 11, image: '/src/assets/images/burger.jpg', category: 'Burgers' },
-  { id: 5, key: 'carbonara', price: 13, image: '/src/assets/images/pasta.jpg', category: 'Pasta', featured: true },
-  { id: 6, key: 'arrabbiata', price: 11, image: '/src/assets/images/pasta.jpg', category: 'Pasta' },
-  { id: 7, key: 'cola', price: 3, image: '/src/assets/images/cocaCola.jpeg', category: 'Drinks' },
-  { id: 8, key: 'orangeJuice', price: 4, image: '/src/assets/images/orange_juice.jpg', category: 'Drinks' },
-  { id: 9, key: 'chocolateCake', price: 6, image: '/src/assets/images/chocolate_cake.jpg', category: 'Desserts' },
-  { id: 10, key: 'tiramisu', price: 7, image: '/src/assets/images/tiramisu.jpg', category: 'Desserts' }
+  { id: 1, key: 'margherita', price: 12, image: '/images/pizza.jpg', category: 'Pizza', featured: true },
+  { id: 2, key: 'pepperoni', price: 14, image: '/images/pizza.webp', category: 'Pizza' },
+  { id: 3, key: 'classicBurger', price: 10, image: '/images/burger.jpg', category: 'Burgers', featured: true },
+  { id: 4, key: 'chickenBurger', price: 11, image: '/images/burger.jpg', category: 'Burgers' },
+  { id: 5, key: 'carbonara', price: 13, image: '/images/pasta.jpg', category: 'Pasta', featured: true },
+  { id: 6, key: 'arrabbiata', price: 11, image: '/images/pasta.jpg', category: 'Pasta' },
+  { id: 7, key: 'cola', price: 3, image: '/images/cocaCola.jpeg', category: 'Drinks' },
+  { id: 8, key: 'orangeJuice', price: 4, image: '/images/orange_juice.jpg', category: 'Drinks' },
+  { id: 9, key: 'chocolateCake', price: 6, image: '/images/chocolate_cake.jpg', category: 'Desserts' },
+  { id: 10, key: 'tiramisu', price: 7, image: '/images/tiramisu.jpg', category: 'Desserts' }
 ];
 
 export const useMenuService = () => {
